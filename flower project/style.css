@@ -1,0 +1,525 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+:root{
+    --pink:rgb(238, 4, 82);
+}
+.home{
+    background: url(./imgnew/home-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+nav{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0rem 1rem rgba(0,0,0,.1);
+    z-index: 2;
+}
+.home nav h1{
+    font-size: 30px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--pink);
+}
+.icons:hover{
+    color: var(--pink);
+}
+.hometext{
+    width: 500px;
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    left: 8%;
+    padding: 10px 0px;
+    z-index: 1;
+}
+
+.hometext h1{
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.hometext h2{
+    color: rgb(209, 9, 69);
+    margin-bottom: 5px;
+    font-size: 30px
+}
+.hometext p{
+    margin-bottom: 15px;
+}
+.hometext button{
+    width: 100px;
+    padding: 10px;
+    background: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+@media screen and (max-width:550px){
+    .home{
+        background: url(./imgnew/home-bg.jpg);
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        
+    }
+
+    .home nav h1{
+        font-size: 20px;
+    }
+    nav ul li a{
+        display: inline-block;
+        margin-left: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--pink);
+        font-size: 13px;
+    }
+
+    .hometext{
+        width: 250px;
+        position: absolute;
+        display: inline-block;
+        top: 35%;
+        left: 8%;
+        padding: 10px 0px;
+        z-index: 1;
+
+    }
+    .hometext h1{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .hometext h2{
+        color: rgb(209, 9, 69);
+        margin-bottom: 5px;
+        font-size: 20px
+    }
+    .hometext p{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .hometext button{
+        width: 100px;
+        padding: 10px;
+        background: var(--pink);
+        color: white;
+        border: none;
+        border-radius: 30px;
+    }
+}
+
+/* about */
+
+.about{
+    padding: 20px 8%;
+    background: white;
+}
+.about h1{
+    background: rgb(250, 216, 222);
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(238, 4, 82);
+}
+.about h1 span{
+    color: black;
+}
+.aboutbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.aboutvid{
+    flex-basis: 50%;
+    margin: auto;
+    position: relative;;
+}
+.aboutvid video{
+    width: 90%;
+}
+.aboutvid h1{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    background: white;
+    mix-blend-mode: screen;
+    color: black;
+    font-size: 20px;
+}
+.abouttext{
+    flex-basis: 50%;
+}
+.abouttext h1{
+    font-size: 30px; 
+    margin-bottom: 5px;
+}
+.abouttext p{
+    margin-bottom: 15px;
+}
+.abouttext button{
+    width: 100px;
+    padding: 10px;
+    background: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+.abouttext h1{
+    background: none;
+    padding: 0px;
+    text-align: initial;
+}
+
+@media screen and (max-width:550px){
+    .about{
+        padding: 20px 8%;
+        background: white;
+    }
+    .about h1{
+        background: rgb(250, 216, 222);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: rgb(238, 4, 82);
+    }
+    .aboutvid{
+        flex-basis: 100%;
+        margin: auto;
+        position: relative;;
+    }
+    .aboutvid video{
+        width: 100%;
+    }
+    .aboutvid h1{
+        position: absolute;
+        font-size: 20px;
+        width: 100%;
+        top: 40%;
+        background: white;
+        mix-blend-mode: screen;
+        color: black;
+    }
+    .abouttext{
+        flex-basis: 100%;
+        padding-top: 20px;
+    }
+    .abouttext h1{
+        font-size: 30px; 
+        margin-bottom: 5px;
+    }
+}
+
+/* fan4 */
+
+.fan4{
+    background: rgb(250, 216, 222);
+    padding: 20px 8%;
+}
+.fanbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fanitem{
+    flex-basis: 24%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.fanitem img{
+    width: 10px;
+    height: 35px;
+    flex-basis: 20%;
+}
+.fanitemtext{
+    flex-basis: 80%;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+@media screen and (max-width:550px){
+    .fanitem{
+        flex-basis: 100%;
+        background: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* latestproducts */
+
+.latestproducts{
+    padding: 20px 8%;
+
+}
+.latestproducts h1{
+    /* background: rgb(250, 216, 222); */
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(238, 4, 82);
+}
+.latestproducts h1 span{
+    color: black;
+}
+.productbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.mainproduct{
+    flex-basis: 33%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.mainproduct h1{
+    /* background: rgb(250, 216, 222); */
+    text-align: initial;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    padding: 20px;
+    
+}
+.mainproduct h3{
+    color: var(--pink);
+}
+.mainproduct img{
+    width: 60%;
+}
+
+@media screen and (max-width:550px){
+    .latestproducts h1{
+        /* background: rgb(250, 216, 222); */
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: rgb(238, 4, 82);
+    }
+    .mainproduct{
+        flex-basis: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+        position: relative;
+    }
+}
+
+/* testimonials */
+
+.testimonial{
+    padding: 20px 8%;
+
+}
+.testimonial h1{
+    background: rgb(250, 216, 222);
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(238, 4, 82);
+}
+.testimonial h1 span{
+    color: black;
+}
+.testimonialbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.testimonialboxmain{
+    flex-basis: 30%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+.testimonialboxmain p{
+   text-align: initial;
+}
+
+.tbmfn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+.tbmfn img{
+    width: 50px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.tbmfn h4{
+    text-align: initial;
+    color: var(--pink);
+    font-size: 20px;
+    
+}
+.tbmfn h4 span{
+    color: black;
+    font-size: 15px;
+}
+
+@media screen and (max-width:550px){
+    .testimonial h1{
+        background: rgb(250, 216, 222);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: rgb(238, 4, 82);
+    }
+    .testimonialboxmain{
+        flex-basis: 100%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    }
+}
+
+/* contact */
+
+.contact{
+    padding: 20px 8%;
+    background: white;
+}
+.contact h1{
+    background: rgb(250, 216, 222);
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(238, 4, 82);
+}
+.contact h1 span{
+    color: black;
+}
+.contactbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+}
+.contactbox form{
+    flex-basis: 50%;
+    padding: 70px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+.contactbox img{
+    flex-basis: 50%;
+}
+.input-b{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.contactbox button{
+    width: 120px;
+    padding: 10px;
+    background: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:550px){
+    .contact h1{
+        background: rgb(250, 216, 222);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: rgb(238, 4, 82);
+    }
+    
+    .contactbox form{
+        flex-basis: 100%;
+        padding: 10px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    }
+    .contactbox img{
+        flex-basis: 100%;
+    }
+}
+
+/* footer */
+
+.footer{
+    padding: 20px 8%;
+    background: rgb(250, 216, 222);
+}
+.footerbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: initial;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.rfbox{
+    display: block;
+    flex-basis: 25%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.rfbox h1{
+    color: var(--pink);
+}
+.rfbox a{
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+.rfbox img{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:550px){
+    .rfbox{
+        display: block;
+        flex-basis: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
